@@ -7,7 +7,6 @@
 }
 body {
     box-sizing: border-box;
-    margin: 0px;
     
 }
 /*** COULEURS DES ETOILES ***/
@@ -27,7 +26,7 @@ header{
 .logo{
     width: auto;
     height: 40px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .nav{
     display: flex;
@@ -43,10 +42,10 @@ nav a{
     text-decoration: none;
     color: black
 }
-nav .slideborder  {
+nav  {
     padding-top: 20px;
 }
-nav .slideborder :hover{
+.nav1 a:hover{
     border-top: solid 2px #0065fc;
 }
 
@@ -55,8 +54,7 @@ nav .slideborder :hover{
 form {
     display: block;
     width: 100%;
-    margin-left: 60px;
-  
+    margin-left: 20px;
 }
 form h1, p{
     margin-top: 20px;
@@ -103,42 +101,30 @@ form button:hover {
 /*** FILTRE ***/
 .filters {
     display: flex;
-    flex-flow: row ;
     align-items: center;
-    margin-top: 30px;
+    margin-right: 450px ;
  }
- .filters h3 {
-    margin-right: 20px;
+.btn-filter {
+    font-weight: bold;
+    border:double 1px #D2D2D2;
+    display: flex;
+    border-radius: 40px;
+    margin-top: 10px;
 }
+
 .btn-filter p {
     margin: 0px;
     padding-right: 20px;
     cursor: pointer;
 }
-.btn-filter {
-    font-weight: bold;
-    border:double 1px #D2D2D2;
-    display: flex;
-    flex-direction: wrap;
-    border-radius: 40px;
-    margin-top: 0px;
-}
+
 .btn-filter:hover{
     background-color: #DEEBFF;
     box-shadow: 0 0 8px #d2d2d2;
 }
 .btn-filter .fa-solid {
     border-radius: 30px;
-    color: #0065FC;
-}
-.btn-filter .fa-child-reaching {
     padding: 14px 17px 14px 17px;
-    margin-right: 10px;
-    color: #0065FC;
-}
-.btn-filter .fa-heart, .fa-dog, .fa-money-bill-wave {
-    padding: 14px 14px 14px 14px;
-    margin-right: 10px;
     color: #0065FC;
 }
 
@@ -147,12 +133,11 @@ form button:hover {
 .info {
     display: flex;
     align-items: center;
-    margin-left: -400px;
-    margin-top: 20px;
 }
-.info p {
-    margin-left: -450px;
+.info i, .info p {
+    margin: 20px;
 }
+
 .logo_info {
     font-size: 16px;
     color: #0065fc;
@@ -166,7 +151,7 @@ form button:hover {
 .container1 {                                   
     display: flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 20px 10px 0 0px;
     width: 100%;
 } 
 .container1 h3 {
@@ -219,8 +204,8 @@ form button:hover {
     margin: 3px
 }
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #0065FC;
+    transform: scale(1.02);
+    box-shadow: 0 0 8px #000000;
     cursor: pointer;
 }
 .plus{
@@ -235,8 +220,6 @@ form button:hover {
     width: 30%;
     border-radius: 20px;
     align-items: center;
-    margin-right: 40px;
-    margin-left: 40px;
 
 }
 .titrePop{
@@ -269,8 +252,8 @@ form button:hover {
     transition: all 0.2s;
 }
 .card-popular:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #0065FC;
+    transform: scale(1.02);
+    box-shadow: 0 0 8px #000000;
     cursor: pointer;
 }
 .card-popular img {
@@ -303,21 +286,19 @@ form button:hover {
 
 
 /***ACTIVITES***/
-.container2{
-    display: flex;
-    justify-content: space-between;
-}
-.activite{
-    margin-left: 60px;
+.activite h3{
+    margin-top: 40px;
+    margin: 50px 0 0 50px;
 }
 .activitesMarseille{
-    width: 21%;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .card-activite {
-    display: flex;
+    width: 20%;
     border-radius: 20px;
-    margin: 40px 0 20px ;
-    box-shadow: 0 0 8px 8px #E2E2E2
+    box-shadow: 0 0 8px 8px #e2e2e2
  } 
 .card-activite img {
     border-radius: 20px 20px 0 0;
@@ -328,83 +309,178 @@ form button:hover {
 .nomActivite { 
     border-radius: 0 0 20px 20px;
     background-color: #ffffff;
+    color: #000000;
     margin: 0px 0 2px 10px;
     padding: 5px;
+    text-decoration: none;
 }
 .card-activite:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 8px 0px #0065FC;
+    box-shadow: 0px 0px 8px 0px #000000;
     cursor: pointer;
 }
-
 
 /***FOOTER***/
 footer {
     display: flex;
     justify-content: space-evenly;
     background-color: #f2f2f2;
-    margin-top: 20px;
+    margin: 50px 0px 0px 50px;
 }
 footer a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    margin: 0;
 }
 
-/***TABLETTE***/
-@media (max-width: 992px) {
+/***Mobile***/
+@media screen and (max-width:767px){
+   
+/***LOGO+NAV***/
+    header {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        border-bottom: 2px solid #f2f2f2;
+        width: 100%;
+        margin-top:20px;
+    }
+    .nav1{
+        justify-content: center;
+        margin-right: 50%;
+        margin-left: 50%;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .nav1 :hover{
+        border-top: none;
+    }
+    .nav1 a:hover{
+        border-bottom:2px solid #0065fc;
+    }
 
-        *{
-            margin-left: 0px;
-            justify-content: center;
-        }   
-        header{
-            display: block;
-        }
-        .nav{
-            display: flex;
-            flex-basis: 25%;
-            align-items: center;
-        }
-        .logo {
-            margin-left: 0;
-        }
-        .nav img{
-            display: block;
-            margin: auto;
-            padding-left: 40px;
-        }
-        .nav1{
-            display: flex;
-            flex-basis: 100%;
-            text-align: center;
-        }
-        .filters{
-            flex-wrap:row-reverse;
-        }
-        .container1{
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-            width: 100%;
-        }
-        .hebergements{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .card-hebergement{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-        .activitesMarseille{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
+/***BARRE NAV***/
+    form{
+        display: block;
+    }
+    form button{
+        background-color: white;
+        margin: 5px;
+    }
+   
+    .searchBar input {
+        border: 1px solid #f2f2f2;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 0 7px 10px;
+        margin-left: -5px;
+    }
+    .fa-solid.fa-magnifying-glass{
+        display: flex;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 0px 10px 10px 0;
+        margin-left: -30px ;
+    }
+    span{
+        display: none;
+    }
     
-        
+    
+/***FILTRE***/
+    .filters{
+        margin-left: 20px;
+    }
+    .btnFilters{
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+    }
+    .btn-filter{
+
+    }
+
+/***HEBERGEMENT+POPILAIRE***/
+    .main{
+        display: block;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+/***HEBERGEMENTS***/
+    .hebergements{
+
+    }
+    .card-hebergement{
+
+    }
+    .card{
+
+    }
+/***POPULAIRE***/
+    .populaires{
+        border-radius: 0;
+        width: 109%;
+    }
+    .titrePop {
+        font-size: 14px;
+
+    }
+    .popular-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-popular{
+        height: 150px;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .card-popular img {
+        height: 150px;
+        width: 40%;
+    }
+    
+    
+   
+/***ACTIVITE***/
+   .activite{
+
+   }
+   .titreActivite{
+
+   }
+   .card-activite{
+
+   }
+/***FOOTER***/
+    footer{
+
+    }
+
+
+
+
+
+
+}
+
+
+/***Tablette***/
+@media screen and (min-width: 769px) and (max-width: 992px){
+    *{
+        margin: 0;
+    }
+   body{
+    width: 100%;
+   }
 }
