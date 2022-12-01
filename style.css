@@ -42,10 +42,10 @@ nav a{
     text-decoration: none;
     color: black
 }
-nav  {
+nav ul  {
     padding-top: 20px;
 }
-.nav1 a:hover{
+nav ul :hover{
     border-top: solid 2px #0065fc;
 }
 
@@ -400,11 +400,12 @@ footer a {
     }
     .btnFilters{
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         flex-direction: column;
     }
     .btn-filter{
-
+        width: 100%;
+        align-items: center;
     }
 
 /***HEBERGEMENT+POPILAIRE***/
@@ -416,7 +417,7 @@ footer a {
         flex-direction: column-reverse;
     }
 /***HEBERGEMENTS***/
-    .hebergements{
+    /*.hebergements{
 
     }
     .card-hebergement{
@@ -424,11 +425,11 @@ footer a {
     }
     .card{
 
-    }
+    }*/
 /***POPULAIRE***/
     .populaires{
         border-radius: 0;
-        width: 109%;
+        width: 100%;
     }
     .titrePop {
         font-size: 14px;
@@ -443,17 +444,26 @@ footer a {
     .card-popular{
         height: 150px;
         width: 100%;
-        margin: 0 0 20px 0;
+        margin: 0 0 10px 0;
     }
     .card-popular img {
-        height: 150px;
-        width: 40%;
+        width: 30%;
+    }
+    .nomHotel{
+        margin-left: 35%;
+    }
+    .nuit{
+        margin-left: 35%;
+    }
+    .etoiles{
+        margin-left: 35%;
+        margin-top: 10%;
     }
     
     
    
 /***ACTIVITE***/
-   .activite{
+   /*.activite{
 
    }
    .titreActivite{
@@ -461,11 +471,11 @@ footer a {
    }
    .card-activite{
 
-   }
+   }*/
 /***FOOTER***/
-    footer{
+   /* footer{
 
-    }
+    }*/
 
 
 
@@ -480,7 +490,5 @@ footer a {
     *{
         margin: 0;
     }
-   body{
-    width: 100%;
-   }
+   
 }
