@@ -337,14 +337,13 @@ footer a {
   /************/
  /***Mobile***/
 /************/ 
-@media screen and (max-width:768px){
+@media screen and (min-width: 320px) and (max-width:600px){
    
 /***LOGO+NAV***/
     header {
         display: block;
         justify-content: center;
         align-items: center;
-        width: 100%;
     }
     .logo {
         display: flex;
@@ -354,13 +353,13 @@ footer a {
     nav{
         border-bottom: 2px solid #f2f2f2;
         width: 100%;
-        margin-top:20px;
+        margin-top:10px;
     }
     .menu{
         justify-content: center;
         margin-right: 50%;
         margin-left: 50%;
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 5px;
     }
     .menu :hover{
@@ -372,10 +371,11 @@ footer a {
 /***BARRE NAV***/
     form{
         display: block;
+        margin-left: 20px;
     }
     form button{
         background-color: white;
-        margin: 5px;
+        margin: 2px;
     }
     .searchBar input {
         border: 1px solid #f2f2f2;
@@ -409,6 +409,11 @@ footer a {
    
     .btn-filter{
         margin-left: 0px;
+    }
+    .info p{
+        font-size: 15px;
+        margin-left: 0px;
+        margin-top: 20px;
     }
 /***HEBERGEMENT+POPILAIRE***/
     .main{
@@ -498,7 +503,7 @@ footer a {
   /**************/
  /***Tablette***/
 /**************/
-@media screen and (min-width: 769px) and (max-width: 992px){
+@media screen and (min-width: 601px) and (max-width: 992px){
    
 /***LOGO+NAV***/
    header {
@@ -507,7 +512,7 @@ footer a {
 }
 nav{
     margin-top:20px;
-    margin-right: 20px;
+    margin-left: -100px;
 }
 .menu{
     font-size: 14px;
@@ -526,7 +531,7 @@ form{
 }
 form button{
     background-color: white;
-    margin: 5px;
+    margin: -1px;
 }
 .searchBar input {
     border: 1px solid #f2f2f2;
@@ -554,16 +559,15 @@ span{
 /***FILTRE***/
 .filters{
     display: flex;
-    font-size: 16px;
-    width: 100%;
+    width: 95%;
 }
-.
 
 .btn-filter{
     align-items: center;
     font-weight: bold;
-    border:solid 1px #D2D2D2;
-    margin-top: 20px
+    font-size: 16px;
+    border: solid 1px #D2D2D2;
+    margin-top: 10px
 }
 
 
@@ -576,24 +580,28 @@ span{
     flex-direction: column;
 }
 .hebergements{
-    width: 100%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     margin-bottom: 50px;
-    margin-right: 100px;
+}
+.hebergements h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .populaires{
     display: block;
     justify-content: center;
-    width: 100%;
+    width: 95%;
 }
-.titrePop, .fa-solid.fachart {
+.titrePop {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: center;
 }
 .popular-list{
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: row;
 }
@@ -603,8 +611,8 @@ span{
     font-size: 14px;
 }
 .etoiles{
-    margin-right: 10%;
-    margin-top: 5px;
+    margin-right: 5%;
+    margin-top: 1px;
 }
 
 
@@ -622,7 +630,7 @@ span{
     margin-right: auto;
 }
 .nomActivite{
-    font-size: 24px;
+    font-size: 16px;
     justify-content: center;
     align-items: center;
 }
@@ -630,8 +638,8 @@ span{
 
 /***FOOTER***/
 footer{
-    display: flex;
+    display: block;
     width: 100%;
-    margin-left: 0;
+    margin: 0px;
 }
 }
