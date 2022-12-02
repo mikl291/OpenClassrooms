@@ -509,25 +509,22 @@ footer a {
    header {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 nav{
     margin-top:20px;
-    margin-left: -100px;
+    margin-left: -250px;
 }
 .menu{
     font-size: 14px;
 }
-.menu :hover{
-    border-top: none;
-}
-.menu a:hover{
-    border-bottom:none;
-}
+
 
 
 /***BARRE NAV***/
 form{
     display: block;
+   
 }
 form button{
     background-color: white;
@@ -535,7 +532,7 @@ form button{
 }
 .searchBar input {
     border: 1px solid #f2f2f2;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     padding: 8px 0 7px 10px;
     margin-left: -5px;
@@ -549,23 +546,24 @@ span{
     border: none;
     color: white;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     padding: 8px 17px 8px 17px;
     cursor: pointer;
-    margin-left: -30px;
+    margin-left: -20px;
 }
 
 
 /***FILTRE***/
 .filters{
     display: flex;
-    width: 95%;
+    width: 90%;
+    margin-left: 10px;
 }
 
 .btn-filter{
     align-items: center;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 10px;
     border: solid 1px #D2D2D2;
     margin-top: 10px
 }
@@ -580,20 +578,25 @@ span{
     flex-direction: column;
 }
 .hebergements{
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 87%;
+    margin-left: 20px;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .hebergements h3{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.card-hebergement{
+    width: 100%;
+}
+
+/***POPULAIRE**/
 .populaires{
     display: block;
     justify-content: center;
-    width: 95%;
+    width: 87%;
+    margin-left: 20px;
 }
 .titrePop {
     display: flex;
@@ -601,18 +604,25 @@ span{
     justify-content: center;
 }
 .popular-list{
-    width: 95%;
     display: flex;
     flex-direction: row;
 }
 .card-popular{
-    margin-right: 20px;
     width: 100%;
-    font-size: 14px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+.nomHotel{
+    margin-left: 90px;
+    margin-top: -30px;
+}
+.nuit{
+    margin-left: 90px;
+    margin-top: 0px;
 }
 .etoiles{
-    margin-right: 5%;
-    margin-top: 1px;
+    margin-right: 40px;
+    margin-top: 25px;
 }
 
 
@@ -625,12 +635,11 @@ span{
 }
 .activitesMarseille{
     display: flex;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 87%;
+    margin-left: 20px;
 }
 .nomActivite{
-    font-size: 16px;
+    font-size: 14px;
     justify-content: center;
     align-items: center;
 }
@@ -640,6 +649,7 @@ span{
 footer{
     display: block;
     width: 100%;
-    margin: 0px;
+    font-size: 12px;
+    margin-left: 10px;
 }
 }
