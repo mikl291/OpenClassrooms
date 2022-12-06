@@ -150,7 +150,7 @@ form button:hover {
 
 
 /*** HEBERGMENTS ***/
-.hebergementPopulaire {                                   
+.accomPop {                                   
     display: flex;
     justify-content: space-between;
     margin: 20px 10px 0 0px;
@@ -160,7 +160,7 @@ form button:hover {
     padding-left: 40px;
     margin-top: 20px;
 }
-.hebergements {
+.accomodation {
     width: 65%;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -168,19 +168,19 @@ form button:hover {
     flex-wrap: wrap;
     align-items: flex-start;
 }
-.hebergements h3 {
+.accomodation h3 {
     width: 100%;
 }
-.hebergements a, .populaires a, .activites a {
+.accomodation a, .popular a, .activity a {
     text-decoration: none;
     color: black;
 }
-.card-hebergement {
+.card-accomodation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
  } 
-.card-hebergement div {
+.card-accomodation div {
     width: 246px;
     height: 199px;
     display: flex;
@@ -217,23 +217,23 @@ form button:hover {
 
 
 /*** POPULAIRE ***/
-.populaires {
+.popular {
     background-color: #F2f2f2;
     width: 30%;
     border-radius: 20px;
     align-items: center;
 
 }
-.titrePop{
+.titlePop{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.titrePop h3{
+.titlePop h3{
     margin: 30px 90px 20px 0px;
 }
-.titrePop i{
+.titlePop i{
     font-size: 20px;
 }
 .popular-list {
@@ -272,15 +272,15 @@ form button:hover {
     background-color: rgb(255, 255, 255);
     
 }
-.nomHotel {
+.nameHotel {
     margin-left: 150px;
     margin-top: -45px;
 }
-.nuit{
+.night{
     margin-left: 150px;
     margin-top: -15px;
 }
-.etoiles{
+.stars{
     margin-right: 100px;
     margin-top: 35px;
 }
@@ -288,27 +288,27 @@ form button:hover {
 
 
 /***ACTIVITES***/
-.activite h3{
+.activity h3{
     margin-top: 40px;
     margin: 50px 0 0 50px;
 }
-.activitesMarseille{
+.activityMarseille{
     display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.card-activite {
+.card-activity {
     width: 20%;
     border-radius: 20px;
     box-shadow: 0 0 8px 8px #e2e2e2
  } 
-.card-activite img {
+.card-activity img {
     border-radius: 20px 20px 0 0;
     width: 100%;
     height: 444px;
     object-fit: cover;
 }
-.nomActivite { 
+.nameActivity { 
     border-radius: 0 0 20px 20px;
     background-color: #ffffff;
     color: #000000;
@@ -316,7 +316,7 @@ form button:hover {
     padding: 5px;
     text-decoration: none;
 }
-.card-activite:hover {
+.card-activity:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 8px 0px #000000;
     cursor: pointer;
@@ -419,19 +419,19 @@ footer a {
     .main{
         display: block;
     }
-    .hebergementPopulaire{
+    .accomPop{
         flex-direction: column-reverse;
     }
 /***HEBERGEMENTS***/
-    .hebergements{
+    .accomodation{
         background-color: #FFFFFF;
     }
-    .hebergements h3{
+    .accomodation h3{
         font-size: 18px;
         margin-bottom: 25px;
         margin-left: -80px;
     }
-    .card-hebergement{
+    .card-accomodation{
         display: flex;
     }
     .card{
@@ -442,11 +442,11 @@ footer a {
         font-size: 16px;
     }
 /***POPULAIRE***/
-    .populaires{
+    .popular{
         border-radius: 0;
         width: 100%;
     }
-    .titrePop {
+    .titlePop {
         font-size: 18px;
 
     }
@@ -464,30 +464,30 @@ footer a {
     .card-popular img {
         width: 30%;
     }
-    .nomHotel{
+    .nameHotel{
         margin-left: 35%;
     }
-    .nuit{
+    .night{
         margin-left: 35%;
     }
-    .etoiles{
+    .stars{
         margin-left: 30%;
         margin-top: 10%;
     }
 /***ACTIVITE***/
-   .activite{
+   .activity{
         display: block;
 
    }
-   .titreActivite{
+   .titleActivity{
         font-size: 18px;
    }
-   .activitesMarseille{
+   .activityMarseille{
         display: flex;
         flex-direction: column;
         justify-content: center;
    }
-   .card-activite{
+   .card-activity{
         width: 90%;
         margin-top: 3%;
    }
@@ -573,32 +573,32 @@ span{
 .main{
     display: block;
 }
-.hebergementPopulaire{
+.accomPop{
     display: flex;
     flex-direction: column;
 }
-.hebergements{
+.accomodation{
     width: 87%;
     margin-left: 20px;
     justify-content: center;
     margin-bottom: 20px;
 }
-.hebergements h3{
+.accomodation h3{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.card-hebergement{
+.card-accomodation{
     width: 100%;
 }
 
 /***POPULAIRE**/
-.populaires{
+.popular{
     display: block;
     justify-content: center;
     width: 87%;
     margin-left: 20px;
 }
-.titrePop {
+.titlePop {
     display: flex;
     justify-content: space-between;
     justify-content: center;
@@ -612,33 +612,33 @@ span{
     margin-right: 5px;
     font-size: 12px;
 }
-.nomHotel{
+.nameHotel{
     margin-left: 90px;
     margin-top: -30px;
 }
-.nuit{
+.night{
     margin-left: 90px;
     margin-top: 0px;
 }
-.etoiles{
-    margin-right: 40px;
-    margin-top: 25px;
+.stars{
+    margin-right: 30px;
+    margin-top: 10 px;
 }
 
 
 /***ACTIVITES***/
-.activite{
+.activity{
     display: block;
 }
-.titreActivite{
+.titleActivity{
     margin: 0;
 }
-.activitesMarseille{
+.activityMarseille{
     display: flex;
     width: 87%;
     margin-left: 20px;
 }
-.nomActivite{
+.nameActivity{
     font-size: 14px;
     justify-content: center;
     align-items: center;
@@ -652,4 +652,5 @@ footer{
     font-size: 12px;
     margin-left: 10px;
 }
+
 }
