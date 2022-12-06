@@ -59,6 +59,7 @@ form {
 form h1, p{
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 form i {
     background-color: #f2f2f2;
