@@ -454,7 +454,6 @@ footer a {
         justify-content: center;
     }
     .card-popular{
-        width: 100%;
         font-size: 12px;
         margin-right: 5px;
         margin-top: 10px;
@@ -490,10 +489,16 @@ footer a {
    }
 /***FOOTER***/
    footer{
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    }
+    .footer-propos, 
+    .footer-hebergement, 
+    .footer-assistance{
+        margin: 20px;
     }
 }
 
@@ -510,48 +515,45 @@ footer a {
     margin-left: 60px;
     margin-right: 70px;
 }
-.logo{
+    .logo{
     width: 60px;
     height: auto;
 }
-nav{
+    nav{
     margin-top:20px;
     margin-left: 70px;
 }
-.menu{
+    .menu{
     font-size: 12px;
-    margin-left: 200px;
 }
-.menu :hover{
+    .menu :hover{
     border-top: none;
 }
 
 
-
-
 /***BARRE NAV***/
-form{
+    form{
     display: block;
     margin-left: 70px;
     margin-right: 70px;
     margin-top: 20px;
    
 }
-form button{
+    form button{
     background-color: white;
     margin: -1px;
 }
-.searchBar input {
+    .searchBar input {
     border: 1px solid #f2f2f2;
     font-size: 15px;
     font-weight: bold;
     padding: 8px 0 7px 10px;
     margin-left: -5px;
 }
-.fa-solid.fa-magnifying-glass{
+    .fa-solid.fa-magnifying-glass{
     display: none;
 }
-span{
+    span{
     border-radius: 0 14px 14px 0;
     background-color: #0065FC;
     border: none;
@@ -561,20 +563,20 @@ span{
     cursor: pointer;
     margin-left: -20px;
 }
-.info{
+    .info{
     margin-left: 60px;
     margin-top: 20px;
 }
 
 /***FILTRE***/
-.filters{
+    .filters{
     display: flex;
     width: 90%;
     margin-left: 60px;
     margin-top: 30px;
 }
 
-.btn-filter{
+    .btn-filter{
     align-items: center;
     font-weight: bold;
     font-size: 10px;
@@ -585,15 +587,15 @@ span{
 
 
 /***HEBERGEMENT+POPULAIRE***/
-.main{
+    .main{
     display: block;
 }
 /***HEBERGEMENT***/
-.accomPop{
-    display: flex;
+    .accomPop{
+    display: block;
     flex-direction: column;
 }
-.accomodation{
+    .accomodation{
     width: 100%;
     margin-left: 70px;
     margin-right: 70px;
@@ -601,17 +603,17 @@ span{
     justify-content: center;
     margin-bottom: 20px;
 }
-.accomodation h3{
+    .accomodation h3{
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
     font-size: 22px;
 }
-
-
-
+    .card-accomodation{
+    width: 100%;
+}
 /***POPULAIRE**/
-.popular{
+    .popular{
     display: block;
     justify-content: center;
     width: 100%;
@@ -619,66 +621,63 @@ span{
     margin-right: 70px;
     font-size: 12px;
 }
-.titlePop {
+    .titlePop {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     font-size: 22px;
 }
-
-
-.popular-list{
+    .popular-list{
     display: flex;
     flex-direction: row;
 }
-.card-popular{
+    .card-popular{
     width: 100%;
     font-size: 12px;
-    margin-right: 5px;
-    margin-top: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
-.nameHotel{
+    .nameHotel{
     margin-left: 45%;
 }
-.night{
+    .night{
     margin-left: 45%;
     margin-top: 0px;
     font-size: 11px;
 }
-.stars{
+    .stars{
     margin-left: 45%;
     margin-top: 20px;
 }
 
 
 /***ACTIVITES***/
-.activity{
+    .activity{
     display: block;
 }
-.titleActivity{
+    .titleActivity{
     margin: 40px;
     font-size: 22px;
 }
-.activityMarseille{
+    .activityMarseille{
     display: flex;
     width: 100%;
     margin-left: 70px;
     margin-right: 70px;
 }
-.nameActivity{
+    .nameActivity{
     font-size: 14px;
 }
 
 
 /***FOOTER***/
-footer{
+    footer{
     display: flex;
     width: 100%;
     font-size: 12px;
     margin-left: 20px;
     justify-content: center;
-    margin-left: 70px;
-    margin-right: 70px;
 }
 
 }
