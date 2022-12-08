@@ -497,13 +497,13 @@ footer a {
         margin-top: 20px;
    }
 /***FOOTER***/
-   footer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 16px;
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 16px;
     }
     .footer-propos,
     .footer-hebergement, 
@@ -525,7 +525,7 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 200px;
+    margin-right: 60px;
 }
     .logo{
     width: 60px;
@@ -541,6 +541,9 @@ footer a {
     .menu :hover{
     border-top: none;
 }
+    .slideborder{
+        margin: 0px;
+    }
 
 
 /***BARRE NAV***/
