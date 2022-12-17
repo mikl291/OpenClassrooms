@@ -446,6 +446,7 @@ width: 100%;
     background-color: white;
     display: block;
     width: 100%;
+    padding: 0;
 }
 .accomMars h2{
     font-size: 20px;
@@ -460,7 +461,7 @@ width: 100%;
     object-fit: cover;
 }
 .card-hebr{
-    width: 80%;
+    width: 95%;
     object-fit: cover;
 }
 .card-hebr img{
@@ -468,22 +469,23 @@ width: 100%;
 }
 /***POPULAIRE***/
 .pop-mars{
-    width: 85%;
+    width: 100%;
     border-radius: 0;
+    padding: 0;
 }
 .pop-mars-title{
-    font-size: 14px;
+    font-size: 22px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .card-pop{
-    width: 70%;
+    width: 95%;
     margin-top: auto;
 }
 .card-pop img{
     object-fit: cover;
-    width: 30%;
+    width: 35%;
     margin: 0;
 }
 .card-descr{
