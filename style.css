@@ -520,8 +520,7 @@ margin-top: 20px;
 
 /***FOOTER***/
 footer {
-display: flex;
-flex-direction: column;
+display: block;
 margin-left: 0;
 margin-top: 20px;
 width: auto;
