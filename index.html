@@ -9,57 +9,52 @@
     <title>Booki</title>
 </head>
 <body>
-    <!--LOGO + NAV-->
-        <header>
-            <div class="logo">
-                <a href="#"><img class="logo" src="img/Booki@3x.png" alt="logo du site booki"></a>
+      <!--LOGO + NAV-->
+      <header>
+        <div class="logo">
+            <a href="#"><img class="logo" src="img/Booki@3x.png" alt="logo du site booki"></a>
+        </div>
+        <nav>
+            <div class="menu">
+                <div class="slideborder"><a href="#ancre1">Hébergements</a></div>
+                <div class="slideborder"><a href="#ancre2">Activités</a></div>
             </div>
-            <nav>
-                <div class="menu">
-                    <div class="slideborder"><a href="#ancre1">Hébergements</a></div>
-                    <div class="slideborder"><a href="#ancre2">Activités</a></div>
-                </div>
-            </nav>
-        </header>
-    <!--RECHERCHE-->
-    <main>
-    <section class="search">
+        </nav>
+    </header>
+      <main>
         <form action="titleSearch">
-            <div class="searchBar">
-                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
-            <div class="btn-search">
-                <i class="fa-solid fa-location-dot"></i>
-                <label for="search" class="accessibility-label"></label>
-                <input type="text" id="search" placeholder="Marseille, France">
-                <button><span>Rechercher</span>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button><br>
-            </div>  
+          <div class="searchBar">
+              <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+              <p>En plein centre ville ou en pleine nature</p>
+          </div>
         </form>
-        <div class="filters">
-            <h3>Filtres</h3>
-                <div class="btn-filter">
-                    <p><i class="fa-solid fa-money-bill-wave"></i>Économique</p>
-                </div>
-                <div class="btn-filter">
-                    <p><i class="fa-solid fa-child-reaching"></i>Familiale</p>
-                </div>
-                <div class="btn-filter">
-                    <p><i class="fa-solid fa-heart"></i>Romantique</p>
-                </div>
-                <div class="btn-filter">
-                    <p><i class="fa-solid fa-dog"></i>Animaux autorisés</p>
-                </div>
-        </div>
-        <div class="info">
-            <i class="fas fa-info logo_info" aria-hidden="true"></i>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-    </section>
-    
-    <!--BLOC HEBERGEMENT & POPULAIRE  -->
+          <form action="#" id="form">
+            <label for="input-search">
+                <i class="fa-solid fa-location-dot"></i> 
+            </label>
+            <input type="search" placeholder="Chercher une ville" value="Marseille, France" name="search" id="input-search" required="">
+            <button class="btn-search" aria-label="Rechercher">
+                <span>Rechercher</span> 
+                <i class="fa-solid fa-magnifying-glass"></i> 
+            </button>
+      </form>
+<!--FILTRES-->
+              <div class="Filters">
+                      <label>Filtres</label>
+                    <span class="btnFilter">
+                      <button class="btn"><i class="fa-sharp fa-solid fa-money-bill-wave"></i>Économique</button>
+                      <button class="btn"><i class="fa-sharp fa-solid fa-person"></i>Familial</button>
+                      <button class="btn"><i class="fa-solid fa-heart"></i>Romantique</button>
+                      <button class="btn"><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
+                    </span>
+              </div>
+
+              <div class="info">
+                <i class="fas fa-info logo_info" aria-hidden="true"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+          </div>
+          <!--BLOC HEBERGEMENT & POPULAIRE  -->
     <section class="all-accomodation">
       <!--BLOC HEBERGEMENT-->
         <article class="accomMars">
@@ -280,7 +275,5 @@
         </div>
     </div>
     </footer>
-    
-    
-    </body>
+</body>
 </html>
