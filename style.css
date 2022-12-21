@@ -243,7 +243,7 @@ margin: 20px 0 0 20px;
 }
 .card-pop {
     display: flex;
-    width: 91%;
+    width: 90%;
     height: 140px;
     border-radius: 20px;
     box-shadow: 0 0px 8px black;
@@ -263,7 +263,7 @@ margin: 20px 0 0 20px;
     flex-direction: column;
     padding: 0% 0% 0% 1%;
     font-size: 14px;
-    margin: -140px 0px 25px 102px;
+    margin: 0;
 }
 .card-descr p {
     margin-top: 15px;
@@ -481,7 +481,7 @@ button span{
  }
  .card-pop{
     width: 30%;
-    margin: -3px 22px 0 0px;
+    margin: 0px 20px 0 0px;
  }
  .card-pop img{
     width: 30%;
@@ -489,15 +489,17 @@ button span{
  .card-descr{
     font-size: 14px;
     padding-top: 5px;
+    padding-right: 45px;
  }
  .card-descr p {
     margin: 0;
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 10px;
+    padding-right: 27px;
 }
  .card-star{
     margin: 0;
-    padding-top: 20px;
+    padding-top: 25px;
     font-size: 12px;
 }
 /************/
@@ -774,7 +776,7 @@ button span{
     font-size: 14px;
     padding-left: 15px;
     padding-top: 5px;
-    /* margin: 0; */
+    margin: 0;
 }
 .card-descr p{
     margin-top: 10px;
