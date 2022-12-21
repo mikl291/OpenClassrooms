@@ -20,7 +20,8 @@ a {
 }
 .star-grey {
     color: darkgray;
-}/*** LOGO + NAV ***/
+}
+/*** LOGO + NAV ***/
 header{
     display: flex;
     margin-top: 20px;
@@ -97,7 +98,7 @@ nav a{
     color: white;
     font-weight: bold;
     font-size: 18px;
-    padding: 5px 17px 5px 17px;
+    padding: 5px 17px 8px 17px;
     cursor: pointer;
     margin-left: -5px;
 }
@@ -112,18 +113,19 @@ nav a{
 /**FILTERS**/
 .Filters{
 display: block;
-margin: 20px 0 0 25px;
+margin: 20px 0 0 20px;
 }
 .Filters label{
     font-weight: bold;
 }
 .btn {
     border: 2px solid  #D2D2D2;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: white;
     font-size: 17px;
+    font-weight: bold;
 }
 .btnFilter .fa-solid {
     color: #0065FC;
@@ -132,6 +134,7 @@ margin: 20px 0 0 25px;
 .btn:hover {
     background-color: #DEEBFF;
     box-shadow: 0 0 8px #d2d2d2;
+    color: #0065FC;
 }
 
 /*** INFORMATION ***/
@@ -210,15 +213,17 @@ margin: 20px 0 0 25px;
 }
 .card-hebr:hover {
     transform: scale(1.02);
-    box-shadow: 0px 0px 8px 0px #000000;
+    box-shadow: 0px 0px 8px 0px #0065FC;
     cursor: pointer;
+    color: #0065FC;
 }
 /***POPULAIRE***/
 .pop-mars {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 28%;
+    width: 30%;
+    margin: 0;
     background-color: #f2f2f2;
 }
 .pop-mars-title {
@@ -226,7 +231,7 @@ margin: 20px 0 0 25px;
     justify-content: space-between;
     font-size: 22px;
     margin-top: 20px;
-    margin: 20px 0px 0 19px;
+    margin: 20px 0px 0 30px;
 }
 .pop-mars-title i {
     color: #0065FC;
@@ -234,9 +239,7 @@ margin: 20px 0 0 25px;
 .pop-hotels {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 20px 0px 35px 0px;
-    width: 95%;
 }
 .card-pop {
     display: flex;
@@ -272,8 +275,9 @@ margin: 20px 0 0 25px;
 }
 .card-pop:hover {
     transform: scale(1.02);
-    box-shadow: 0px 0px 8px 0px #000000;
+    box-shadow: 0px 0px 8px 0px #0065FC;
     cursor: pointer;
+    color: #0065FC;
 }
 
 /***ACTIVITES***/
@@ -283,11 +287,13 @@ margin: 20px 0 0 25px;
 }
 .activityMarseille{
     display: flex;
+    margin: 0;
+    flex-direction: row;
 }
 .card-activity {
     width: 100%;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 20px;
+    /* margin-right: 20px; */
     border-radius: 20px;
     box-shadow: 0 0 8px 8px #e2e2e2
  } 
@@ -303,16 +309,16 @@ margin: 20px 0 0 25px;
 }
 .card-activity:hover {
     transform: scale(1.02);
-    box-shadow: 0px 0px 8px 0px #000000;
+    box-shadow: 0px 0px 8px 0px #0065FC;
     cursor: pointer;
+    color: #0065FC;
 }
 
 /***FOOTER***/
 footer {
     display: flex;
-    justify-content: space-evenly;
     background-color: #f2f2f2;
-    margin: 50px 0px 0px 0px;
+    margin: 50px 0px 0px 15px;
 }
 footer div,
 footer p {
@@ -549,7 +555,7 @@ button span{
 /***MENU***/
 .menu :hover{
     border-top: none;
-    color: black;
+    color: #0065FC;
 }
 .menu a:hover{
     border-bottom:none;
@@ -558,31 +564,35 @@ button span{
 /**SEARCHBAR**/
 .btn-search:hover{
     box-shadow: none;
+    color: #0065FC;
+    background-color: #DEEBFF;
+
 }
 
 /**FILTRES**/
+
 .btn:hover {
-    background: none;
-    box-shadow: none;
+    color: #0065FC;
 }
 
 /**CARD**/
 /**Hebergement**/
 .card-hebr:hover {
-    transform: none;
-    box-shadow: 0 0 8 black;
+    color: #0065FC;
+    box-shadow: 0 0 8px #0065FC;
   }
 /**Populaire**/
 .card-pop:hover {
-    transform: none;
-    box-shadow: 0 0 8 black;
+    color: #0065FC;
+    box-shadow: 0 0 8px #0065FC;
   }
 /**Activités**/
 .card-activity:hover {
-    transform: initial;
+    color: #0065FC;
+    box-shadow: 0 0 8px #0065FC;
 }
 footer p:hover {
-    color: black;
+    color: #0065FC;
 }
  /**********/
 }
@@ -764,6 +774,7 @@ button span{
     font-size: 14px;
     padding-left: 15px;
     padding-top: 5px;
+    /* margin: 0; */
 }
 .card-descr p{
     margin-top: 10px;
@@ -818,39 +829,49 @@ width: 100%;
 
 
  /**********/
-/**HOVER**/
-/**MENU**/
+/***HOVER***/
+/***MENU***/
 .menu :hover{
     border-top: none;
     border-bottom: 2px solid #0065FC;
+    color: #0065FC;
 }
+.menu a:hover{
+    border-bottom:none;
+}
+
 /**SEARCHBAR**/
-.btn-search:hover{
+.btn-search:hover {
     box-shadow: none;
 }
+
 /**FILTRES**/
+
 .btn:hover {
-    background: none;
-    box-shadow: none;
+    color: #0065FC;
 }
+
 /**CARD**/
 /**Hebergement**/
 .card-hebr:hover {
     transform: none;
-    box-shadow: 0 0 8 black;
+    color: #0065FC;
+    box-shadow: 0 0 8px #0065FC;
   }
 /**Populaire**/
 .card-pop:hover {
     transform: none;
-    box-shadow: 0 0 8 black;
+    color: #0065FC;
+    box-shadow: 0 0 8px #0065FC;
   }
 /**Activités**/
 .card-activity:hover {
     transform: none;
-    box-shadow: 0 0 8 black;
+    color: #0065FC;
+    box-shadow: 0 0 8px #0065FC;
 }
 footer p:hover {
-    color: #000000;
+    color: #0065FC;
 }
  /**********/
 }
