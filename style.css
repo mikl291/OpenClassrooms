@@ -2,16 +2,16 @@
 *{
     font-family: "Raleway", "sans-serif";/*font demandé*/
     margin: 0 auto; /*alignement de depart*/
-    text-decoration: none; /*supprime ligne des link  */
-    max-width: 1400px;
+    text-decoration: none; /*supprime ligne des link */
+    max-width: 1400px; /*l'ecran reste identique >1400 px */
 }
 body {
     box-sizing: border-box;
-    
 }
 /***     LINK    ***/
 a {
     color: inherit;
+    margin: 0;
     text-decoration: none;
 }
 /*** STARS COLOR ***/
@@ -26,7 +26,7 @@ header{
     margin-top: 20px;
 }
 .logo{
-    width: 100px;
+    width: 62px;
     margin-left: 10px;
 }
 nav{
@@ -54,6 +54,7 @@ nav a{
 }
 .searchBar p {
     margin-top: 15px;
+    font-size: 16px;
 }
 
 
@@ -81,9 +82,9 @@ nav a{
 
 #input-search{
     border: 1px solid #D2D2D2;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 7px 0 7px 10px;
+    padding: 4px 0 5px 10px;
     margin-left: 0px;
     opacity: 30%;
     
@@ -95,8 +96,8 @@ nav a{
     border: none;
     color: white;
     font-weight: bold;
-    font-size: 16px;
-    padding: 8px 17px 8px 17px;
+    font-size: 18px;
+    padding: 5px 17px 5px 17px;
     cursor: pointer;
     margin-left: -5px;
 }
@@ -122,6 +123,7 @@ margin: 20px 0 0 25px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: white;
+    font-size: 17px;
 }
 .btnFilter .fa-solid {
     color: #0065FC;
@@ -136,9 +138,11 @@ margin: 20px 0 0 25px;
 .info {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 .info i, .info p {
-    margin: 20px;
+    margin: 15px;
+    font-size: 16px;
 }
 
 .logo_info {
@@ -162,17 +166,17 @@ margin: 20px 0 0 25px;
     background-color: #f2f2f2;
 }
 .accomMars h2 {
-    margin-left: 30px;
+    margin-left: 20px;
     margin-top: 20px;
     font-size: 22px;
 }
 .mars-hotels {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 20px 0px 35px 15px;
+    margin: 20px 0px 35px 0px;
 }
 .card-hebr {
     background-color: #ffff;
@@ -191,32 +195,38 @@ margin: 20px 0 0 25px;
     object-fit: cover;
 }
 .card-description {
-    margin-left: 2px;
+    margin-left: 5px;
     font-size: 16px;
 }
 .card-description p, 
 .card-description span {
-    margin-left: 2px;
+    margin-left: 0px;
     font-size: 14px;
 }
 .more h3 {
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 18px;
 }
+.card-hebr:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 8px 0px #000000;
+    cursor: pointer;
+}
+/***POPULAIRE***/
 .pop-mars {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     width: 28%;
-    padding: 10px;
+    /* padding: 10px; */
     background-color: #f2f2f2;
 }
 .pop-mars-title {
     display: flex;
     justify-content: space-between;
     font-size: 22px;
-    margin: 10px 0 0 40px;
+    margin: 5px 0 0 30px;
     margin-top: 10px;
 }
 .pop-mars-title i {
@@ -226,61 +236,66 @@ margin: 20px 0 0 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin: 0;
+    /* width: 95%; */
 }
 .card-pop {
     display: flex;
-    width: 80%;
-    height: 150px;
+    width: 344px;
+    height: 140px;
     border-radius: 20px;
     box-shadow: 0 0px 8px black;
     transition: 0.2s;
     margin-bottom: 20px;
-    margin-top: 0px;
     border: 3px solid #ffff;
 }
 .card-pop img {
-    width: 35%;
+    width: 97px;
+    height: 100%;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
-    margin: 0;
+    margin: -1px;
 }
 .card-descr {
     display: flex;
     flex-direction: column;
-    padding: 0px 0 0 20px;
+    padding: 0% 0% 0% 1%;
     font-size: 14px;
-    margin-top: 10px;
-    margin-right: 25px;
+    margin: -140px 0px 25px 102px;
 }
 .card-descr p {
-    margin: 5px -1px 0 0;
-    font-size: 12.5px;
+    margin-top: 15px;
+    margin-left: 0;
+    font-size: 11px;
 }
 .card-star {
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
 }
-
+.card-pop:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 8px 0px #000000;
+    cursor: pointer;
+}
 
 /***ACTIVITES***/
 .activity h3{
     margin: 50px 0 25px 30px;
     font-size: 22px;
-    
 }
 .activityMarseille{
     display: flex;
 }
 .card-activity {
     width: 100%;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
     border-radius: 20px;
     box-shadow: 0 0 8px 8px #e2e2e2
  } 
 .card-activity img {
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 400px;
+    height: 440px;
     object-fit: cover;
 }
 .nameActivity {
@@ -288,7 +303,7 @@ margin: 20px 0 0 25px;
     padding: 5px;
 }
 .card-activity:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0px 0px 8px 0px #000000;
     cursor: pointer;
 }
@@ -298,7 +313,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     background-color: #f2f2f2;
-    margin: 50px 10px 0px 10px;
+    margin: 50px 0px 0px 0px;
 }
 footer div,
 footer p {
@@ -412,17 +427,17 @@ button span{
  }
  .accomMars h2{
     font-size: 22px;
-    margin-left: 30px;
+    margin-left: 20px;
  }
  .mars-hotels{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 10px;
  }
  .card-hebr{
     width: 29%;
-    margin-right: 20px;
+    margin-right: 25px;
  }
  .card-hebr img{
     width: 100%;
@@ -432,7 +447,7 @@ button span{
  }
  .more h3{
     font-size: 18px;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-bottom: 20px;
  }
  /***POPULAIRE***/
@@ -444,7 +459,7 @@ button span{
  }
  .pop-mars-title{
     font-size: 22px;
-    margin: 30px;
+    margin: 20px;
     display: flex;
     justify-content: space-between;
  }
@@ -454,30 +469,30 @@ button span{
  .pop-hotels{
     display: flex;
     flex-direction: row;
-    width: 96%;
+    width: 100%;
     margin-bottom: 20px;
+    margin-left: 10px;
  }
  .card-pop{
-    font-size: 12px;
-    margin-top: 10px;
-    margin-right: 5px;
+    width: 30%;
+    margin: -3px 22px 0 0px;
  }
  .card-pop img{
-    width: 35%;
-    margin: 0;
+    width: 30%;
  }
  .card-descr{
-    margin: auto;
-    font-size: 13px;
+    font-size: 14px;
+    padding-top: 5px;
  }
  .card-descr p {
     margin: 0;
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 10px;
 }
  .card-star{
-    padding-top: 45px;
-    font-size: 10px;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 12px;
 }
 /************/
 
@@ -485,6 +500,10 @@ button span{
  /***ACTIVITE***/
  .activity{
     display: block;
+}
+.activity h3 {
+    margin: 50px 0 25px 50px;
+    font-size: 22px;
 }
  .titleActivity{
     font-size: 22px;
@@ -576,9 +595,6 @@ footer p:hover {
   /************/
  /***Mobile***/
 /************/ 
-
-
-
 @media screen and (max-width:767px){
     
 /***LOGO+NAV***/
@@ -595,13 +611,13 @@ header {
 nav{
     border-bottom: 2px solid #f2f2f2;
 }
+nav a {
+    display: flex;
+    justify-content: center;
+}
 .menu{
     justify-content: center;
     font-size: 14px;
-}
-.menu :hover{
-    border-top: none;
-    border-bottom: 2px solid #0065FC;
 }
 /************/
 
@@ -616,14 +632,15 @@ nav{
 
 
 /**BARRE NAV**/
+
 #input-search{
     border: 1px solid #D2D2D2;
     font-size: 13px;
     font-weight: bold;
     padding: 9px 1px 7px 2px;
     margin-left: 0px;
-    opacity: 30%;
-    width: 50%;
+    opacity: 40%;
+    width: 48%;
     
 }
 .fa-solid.fa-magnifying-glass{
@@ -646,9 +663,9 @@ button span{
 /***FILTRE***/
 .Filters{
     display: block;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 15px;
-    width: 100%;
+    width: 95%;
 }
 .Filters label{
     font-weight: bold;
@@ -679,7 +696,7 @@ button span{
    margin-right: 5px;
 }
 .info p{
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 5px;
     margin-right: 25px;
     margin-top: 20px;
@@ -691,6 +708,8 @@ button span{
 .all-accomodation{
     display: flex;
     flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
 }
 /***HEBERGEMENT***/
 .accomMars{
@@ -706,12 +725,11 @@ button span{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0;
 }
 .card-hebr{
     width: 90%;
-    margin-left: 5px;
     object-fit: cover;
+    margin-left: 10px;
 }
 .card-hebr img{
     width: 100%;
@@ -727,35 +745,33 @@ button span{
 }
 .pop-mars-title{
     font-size: 22px;
-    margin: 20px;
+    margin: 25px;
     display: flex;
     justify-content: space-between;
 }
 .pop-mars-title i {
     margin: 0;
 }
-.pop-hotels {
-    margin: 0;
-}
 .card-pop{
     width: 90%;
+    margin-left: 10px;
 }
 .card-pop img{
     object-fit: cover;
-    width: 35%;
-    margin: 0;
+    margin-left: 0px;
 }
 .card-descr{
-    font-size: 15px;
-    padding-top: 10px;
-    margin: 0;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-top: 5px;
+    /* margin: 0; */
 }
 .card-descr p{
     margin-top: 10px;
     font-size: 13px;
 }
 .card-star{
-    padding-top: 35px;
+    padding-top: 0px;
 }
 /************/
 
@@ -766,7 +782,8 @@ button span{
 }
 .activity h3 { 
     font-size: 22px;
-    margin: 20px;
+    margin-left: 15px;
+    margin-bottom: 0px;
 }
 .activityMarseille{
     display: flex;
@@ -777,24 +794,21 @@ button span{
 }
 .card-activity{
     width: 95%;
-    margin-top: 5px;
+    margin-top: 27px;
+    margin-left: 0px;
 }
 /************/
 
 
 /***FOOTER***/
-footer {
-flex-direction: column;
-margin-left: 0;
-width: 100%;
-}
+footer {flex-direction: column;margin-left: 0;}
 footer h4 {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .footer-left,
 .footer-middle,
 .footer-right{
-margin: 0px 0 0 20px;
+margin: 5px 0 0 20px;
 width: 100%;
 }
 /************/
@@ -802,7 +816,11 @@ width: 100%;
 
  /**********/
 /**HOVER**/
-
+/**MENU**/
+.menu :hover{
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+}
 /**SEARCHBAR**/
 .btn-search:hover{
     box-shadow: none;
