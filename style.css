@@ -3,7 +3,7 @@
     font-family: "Raleway", "sans-serif";/*font demandé*/
     margin: 0 auto; /*alignement de depart*/
     text-decoration: none; /*supprime ligne des link */
-    max-width: 1400px; /*l'ecran reste identique >1400 px */
+    max-width: 1400px; 
 }
 body {
     box-sizing: border-box;
@@ -243,13 +243,13 @@ margin: 20px 0 0 20px;
 }
 .card-pop {
     display: flex;
-    width: 90%;
     height: 140px;
     border-radius: 20px;
     box-shadow: 0 0px 8px black;
     transition: 0.2s;
     margin-bottom: 20px;
     border: 3px solid #ffff;
+    width: 95%;
 }
 .card-pop img {
     width: 97px;
@@ -421,12 +421,13 @@ button span{
  .all-accomodation{
     display: flex;
     flex-direction: column;
+    width: 100%;
     margin-bottom: -20px;
  }
  /***HEBERGEMENT***/
  .accomMars{
     display: block;
-    width: auto;
+    width: 95%;
     margin-left: 20px;
     margin-right: 20px;
     padding: 0;
@@ -459,7 +460,7 @@ button span{
  /***POPULAIRE***/
  .pop-mars{
     display: block;
-    width: auto;
+    width: 95%;
     padding: 0;
     margin: 20px;
  }
@@ -480,24 +481,24 @@ button span{
     margin-left: 10px;
  }
  .card-pop{
-    width: 30%;
-    margin: -3px 22px 0 0px;
+    margin: 0px 20px 0 0px;
  }
  .card-pop img{
-    width: 30%;
+    width: 35%;
  }
  .card-descr{
     font-size: 14px;
     padding-top: 5px;
+    /* margin: 0; */
  }
  .card-descr p {
-    margin: 0;
     font-size: 13px;
-    margin-top: 10px;
+    margin: -1px;
+    padding-right: -5px;
 }
  .card-star{
     margin: 0;
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 12px;
 }
 /************/
