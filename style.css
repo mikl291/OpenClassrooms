@@ -266,12 +266,12 @@ margin: 20px 0 0 20px;
     margin: -140px 0px 25px 102px;
 }
 .card-descr p {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 0;
     font-size: 11px;
 }
 .card-star {
-    margin: 30px 0 0 0;
+    margin: 40px 0 0 0;
 }
 .card-pop:hover {
     transform: scale(1.02);
@@ -773,16 +773,17 @@ button span{
 }
 .card-descr{
     font-size: 14px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-top: 5px;
     /* margin: 0; */
+    padding-right: 10px;
 }
 .card-descr p{
     margin-top: 10px;
     font-size: 13px;
 }
 .card-star{
-    padding-top: 0px;
+    padding-top: 10px;
 }
 /************/
 
