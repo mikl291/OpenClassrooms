@@ -157,11 +157,11 @@ margin: 20px 0 0 25px;
 .all-accomodation{
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 .accomMars {
     border-radius: 20px;
-    padding: 0px;
-    margin: 0;
     width: 68%;
     background-color: #f2f2f2;
 }
@@ -219,15 +219,14 @@ margin: 20px 0 0 25px;
     flex-direction: column;
     border-radius: 20px;
     width: 28%;
-    /* padding: 10px; */
     background-color: #f2f2f2;
 }
 .pop-mars-title {
     display: flex;
     justify-content: space-between;
     font-size: 22px;
-    margin: 5px 0 0 30px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin: 20px 0px 0 19px;
 }
 .pop-mars-title i {
     color: #0065FC;
@@ -236,12 +235,12 @@ margin: 20px 0 0 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    /* width: 95%; */
+    margin: 20px 0px 35px 0px;
+    width: 95%;
 }
 .card-pop {
     display: flex;
-    width: 344px;
+    width: 91%;
     height: 140px;
     border-radius: 20px;
     box-shadow: 0 0px 8px black;
@@ -318,6 +317,7 @@ footer {
 footer div,
 footer p {
     margin-top: 1rem;
+    font-size: 14px;
 }
 footer p:hover {
     color: #0065FC;
@@ -764,7 +764,6 @@ button span{
     font-size: 14px;
     padding-left: 15px;
     padding-top: 5px;
-    /* margin: 0; */
 }
 .card-descr p{
     margin-top: 10px;
@@ -801,9 +800,13 @@ button span{
 
 
 /***FOOTER***/
-footer {flex-direction: column;margin-left: 0;}
+footer {
+    flex-direction: column;
+    margin-left: 0;
+}
 footer h4 {
     margin-top: 30px;
+    font-size: 16px;
 }
 .footer-left,
 .footer-middle,
