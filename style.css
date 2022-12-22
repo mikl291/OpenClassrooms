@@ -23,7 +23,7 @@ a {
 }
 /*** LOGO + NAV ***/
 header{
-    display: block;
+    display: flex;
     margin-top: 20px;
 }
 .logo{
@@ -61,9 +61,10 @@ nav a{
 
 /*** RECHERCHE ***/
 #form{
+    display: block;
+    width: 100%;
     margin-left: 25px;
     margin-top: 20px;
-    width: 100%;
 }
 
 .fa-location-dot{
@@ -72,13 +73,12 @@ nav a{
     background-color: #d2d2d2;
     height: 100%;
     cursor: pointer;
-    margin: 0px;
-    padding: 8px 13px 8px 18px;
+    margin: -5px;
+    padding: 8px 14px 8px 18px;
 }
 .fa-solid.fa-location-dot{
     justify-content: center;
     align-items: center;
-    width: auto;
 }
 
 #input-search{
@@ -92,17 +92,15 @@ nav a{
     
 }
 .btn-search{
-    border-radius: 0 10px 12px 0;
+    border-radius: 0 14px 14px 0;
     background-color: #0065FC;
     border: none;
     color: white;
     font-weight: bold;
-    width: 22%;
     font-size: 18px;
-    padding: 5px 9px 7px 6px;
+    padding: 5px 17px 8px 17px;
     cursor: pointer;
-    margin-left: 1px;
-    width: 14%;
+    margin-left: -5px;
 }
 
 .btn-search i{
@@ -328,7 +326,7 @@ footer {
 footer div,
 footer p {
     margin-top: 1rem;
-    font-size: 16px;
+    font-size: 14px;
 }
 footer p:hover {
     color: #0065FC;
@@ -341,7 +339,9 @@ footer p:hover {
 /**************/
 
 @media screen and (min-width: 768px) and (max-width: 992px){
-
+    main{
+        width: 100%;
+    }
  /***LOGO+NAV***/
 header{
     display: flex;
@@ -384,8 +384,8 @@ header{
 }
     .fa-solid.fa-magnifying-glass{
     display: none;
- }
-button span{
+}
+    button span{
     border-radius: 10px 14px 14px 1px;
     border: none;
     font-weight: bold;
@@ -403,7 +403,7 @@ button span{
     margin-left: 20px;
 }
 .btn-filter{
-    margin: 0px;
+    width: 100%;
 }
 .btn{
     margin-left: 5px;
@@ -494,7 +494,6 @@ button span{
  .card-descr{
     font-size: 14px;
     padding-top: 5px;
-    /* margin: 0; */
  }
  .card-descr p {
     font-size: 13px;
@@ -612,24 +611,21 @@ footer p:hover {
  /***Mobile***/
 /************/ 
 @media screen and (max-width:767px){
-    body{
-        width: 100%;
-    };
-    
-    
+   main {
+    width: auto;
+    padding: 0;
+   }
 /***LOGO+NAV***/
 header {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
-nav{
+.menu{
     border-bottom: 2px solid #f2f2f2;
+    margin-left: auto;
 }
 nav a {
     display: flex;
@@ -645,9 +641,7 @@ nav a {
 /**TITRE**/
 .searchBar h1  {
     font-size: 22px;
-    margin: 0px;
-    margin-top: 10px;
-    padding-right: 31px;
+    margin: 10px 0 0 0;
 }
 /************/
 
@@ -655,14 +649,13 @@ nav a {
 /**BARRE NAV**/
 
 #input-search{
-    border: 2px solid #D2D2D2;
+    border: 1px solid #D2D2D2;
     font-size: 13px;
     font-weight: bold;
-    padding: 8px 0px 6px 2px;
-    margin-left: -5px;
-    margin-right: -5px;
+    padding: 9px 1px 7px 2px;
+    margin-left: 0px;
     opacity: 40%;
-    width: 60%;
+    width: 50%;
 }
 .fa-solid.fa-magnifying-glass{
     display: flex;
@@ -670,25 +663,20 @@ nav a {
     color: white;
     border-radius: 0px 10px 10px 0;
     padding: 1px 0 1px 10px;
-    margin-left: -1px;
-    justify-content: center;
-    align-items: center;
+    margin-left: -5px ;
 }
 button span{
     display: none;
-    color: #ffffff;
 }
-.btn-search button:hover{
-    box-shadow: none;
-}
+
 /************/
 
 
 /***FILTRE***/
 .Filters{
     display: block;
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
     width: 100%;
 }
 .Filters label{
@@ -698,21 +686,20 @@ button span{
 .btnFilter {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
+    width: 100%;
+    margin-left: 0px;
 }
 .btnFilter .fa-solid{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 16px;
+    margin: 10px;
+    width: 12px;
+    font-size: 17px;
 }
 .btn {
     font-weight: bold;
-    margin: 6px;
+    margin: 3px;
     padding: 0;
-    width: 43%;
-    font-size: 11px;
-    /* justify-content: center; */
+    width: 46%;
+    font-size: 10px;
     align-items: center;
     display: flex;
 }
@@ -720,14 +707,18 @@ button span{
 
 
 /***INFO ***/
+.info{
+    margin-top: 15px;
+    margin-left: 0px;
+}
 .info i{
-   font-size: 12px;
-   margin-right: 5px;
+   font-size: 9px;
+   border-radius: 50%;
 }
 .info p{
-    font-size: 16px;
-    margin-left: 5px;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-left: 0px;
+    margin-right: 30px;
 }
 /************/
 
@@ -752,10 +743,9 @@ button span{
 .mars-hotels{
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 .card-hebr{
-    width: 90%;
+    width: 93%;
     object-fit: cover;
     margin-left: 10px;
 }
@@ -781,23 +771,21 @@ button span{
     margin: 0;
 }
 .card-pop{
-    width: 90%;
+    width: 93%;
     margin-left: 10px;
 }
 .card-pop img{
     object-fit: cover;
-    margin-left: 0px;
 }
 .card-descr{
     font-size: 14px;
     padding-left: 20px;
     padding-top: 5px;
-    /* margin: 0; */
-    padding-right: 10px;
+    padding-right: 15px;
 }
 .card-descr p{
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 12px;
 }
 .card-star{
     padding-top: 10px;
@@ -817,12 +805,14 @@ button span{
 .activityMarseille{
     display: flex;
     flex-direction: column;
-    margin: 11px 5px 10px 5px;
+    margin-left: 0;
+    margin-top: 30px;
 }
 .card-activity{
-    width: 100%;
+    width: 95%;
     margin-top: 10px;
-    margin-left: 0px;
+    margin-left: 10px;
+
 }
 /************/
 
@@ -834,7 +824,7 @@ footer {
 }
 footer h4 {
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .footer-left,
 .footer-middle,
@@ -848,20 +838,18 @@ width: 100%;
  /**********/
 /***HOVER***/
 /***MENU***/
-.menu :hover{
+
+.slideborder :hover{
     border-top: none;
     border-bottom: 2px solid #0065FC;
-    color: #0065FC;
 }
-.menu a:hover{
-    border-bottom:none;
-}
+
+
 
 /**SEARCHBAR**/
 .btn-search:hover {
     box-shadow: none;
 }
-
 /**FILTRES**/
 
 .btn:hover {
