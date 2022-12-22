@@ -512,7 +512,7 @@ button span{
 .card-descr p {
     font-size: 13px;
     margin: -1px;
-    padding-right: -5px;
+    padding-right: 5px;
 }
 .card-star{
     margin: 0;
