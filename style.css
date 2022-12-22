@@ -5,15 +5,20 @@
     text-decoration: none; /*supprime ligne des link */
     max-width: 1400px; 
 }
+
 body {
     box-sizing: border-box;
 }
+
+
 /***     LINK    ***/
 a {
     color: inherit;
     margin: 0;
     text-decoration: none;
 }
+
+
 /*** STARS COLOR ***/
 .star-blue {
     color: #0065FC;
@@ -21,6 +26,8 @@ a {
 .star-grey {
     color: darkgray;
 }
+
+
 /*** LOGO + NAV ***/
 header{
     display: flex;
@@ -49,6 +56,8 @@ nav a{
     border-top: solid 3px #0065fc;
     color: #0065FC;
 }
+
+
 /***SEARCH BAR ***/
 .searchBar{
     margin: 20px 0 0 20px;
@@ -66,7 +75,6 @@ nav a{
     margin-left: 25px;
     margin-top: 20px;
 }
-
 .fa-location-dot{
     border-radius: 15px 0px 0px 15px;
     width: 20px;
@@ -80,7 +88,6 @@ nav a{
     justify-content: center;
     align-items: center;
 }
-
 #input-search{
     border: 1px solid #D2D2D2;
     font-size: 18px;
@@ -88,8 +95,6 @@ nav a{
     padding: 4px 0 5px 10px;
     margin-left: 0px;
     opacity: 30%;
-    
-    
 }
 .btn-search{
     border-radius: 0 14px 14px 0;
@@ -102,18 +107,20 @@ nav a{
     cursor: pointer;
     margin-left: -5px;
 }
-
 .btn-search i{
     display: none;
 }
 .btn-search:hover{
-    box-shadow: 0 0 8px #0065FC;
+    box-shadow: none;
+    color: #0065FC;
+    background-color: #DEEBFF;
 }
+
 
 /**FILTERS**/
 .Filters{
-display: block;
-margin: 20px 0 0 20px;
+    display: block;
+    margin: 20px 0 0 20px;
 }
 .Filters label{
     font-weight: bold;
@@ -137,6 +144,7 @@ margin: 20px 0 0 20px;
     color: #0065FC;
 }
 
+
 /*** INFORMATION ***/
 .info {
     display: flex;
@@ -156,13 +164,15 @@ margin: 20px 0 0 20px;
     padding: 10px 15px 10px 15px;
 }
 
-/*BLOCK HEBERGEMENT*/
+
+/*BLOC HEBERGEMENT&POPULAIRE*/
 .all-accomodation{
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin: 0;
 }
+/*BLOC HEBERGEMENT*/
 .accomMars {
     border-radius: 20px;
     width: 68%;
@@ -283,6 +293,7 @@ margin: 20px 0 0 20px;
     color: #0065FC;
 }
 
+
 /***ACTIVITES***/
 .activity h3{
     margin: 50px 0 25px 30px;
@@ -296,7 +307,6 @@ margin: 20px 0 0 20px;
 .card-activity {
     width: 100%;
     margin-left: 20px;
-    /* margin-right: 20px; */
     border-radius: 20px;
     box-shadow: 0 0 8px 8px #e2e2e2
  } 
@@ -316,6 +326,7 @@ margin: 20px 0 0 20px;
     cursor: pointer;
     color: #0065FC;
 }
+
 
 /***FOOTER***/
 footer {
@@ -362,18 +373,19 @@ header{
 }
 /************/
 
+
  /***BARRE NAV***/
-    form{
+form{
     display: block;
     margin-top: 20px;
     margin-left: 0px;
     
 }
-    form button{
+form button{
     background-color: white;
     margin: -5px;
 }
-    #input-search{
+#input-search{
     border: 1px solid #D2D2D2;
     font-size: 16px;
     font-weight: bold;
@@ -382,10 +394,10 @@ header{
     opacity: 30%;
     width: 30%;
 }
-    .fa-solid.fa-magnifying-glass{
+.fa-solid.fa-magnifying-glass{
     display: none;
 }
-    button span{
+button span{
     border-radius: 10px 14px 14px 1px;
     border: none;
     font-weight: bold;
@@ -411,7 +423,9 @@ header{
     font-size: 17px;
     font-weight: bold;
 }
+/************/
 
+/*BLOC INFORMATION*/
 .info{
     margin-top: 10px;
     font-size: 16px;
@@ -423,108 +437,109 @@ header{
 
  
  /***HEBERGEMENT&POPULAIRE***/
- .all-accomodation{
+.all-accomodation{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: -20px;
- }
+}
  /***HEBERGEMENT***/
- .accomMars{
+.accomMars{
     display: block;
     width: 95%;
     margin-left: 20px;
     margin-right: 20px;
     padding: 0;
- }
- .accomMars h2{
+}
+.accomMars h2{
     font-size: 22px;
     margin-left: 20px;
- }
- .mars-hotels{
+}
+.mars-hotels{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
- }
- .card-hebr{
+}
+.card-hebr{
     width: 29%;
     margin-right: 25px;
- }
- .card-hebr img{
+}
+.card-hebr img{
     width: 100%;
- }
- .card-description p {
+}
+.card-description p {
     font-size: 14px;
- }
- .more h3{
+}
+.more h3{
     font-size: 18px;
     margin-left: 20px;
     margin-bottom: 20px;
- }
+}
  /***POPULAIRE***/
- .pop-mars{
+.pop-mars{
     display: block;
     width: 95%;
     padding: 0;
     margin: 20px;
- }
- .pop-mars-title{
+}
+.pop-mars-title{
     font-size: 22px;
     margin: 20px;
     display: flex;
     justify-content: space-between;
- }
- .pop-mars-title i {
+}
+.pop-mars-title i {
     margin: 0;
- }
- .pop-hotels{
+}
+.pop-hotels{
     display: flex;
     flex-direction: row;
     width: 100%;
     margin-bottom: 20px;
     margin-left: 10px;
- }
- .card-pop{
+}
+.card-pop{
     margin: 0px 20px 0 0px;
- }
- .card-pop img{
+}
+.card-pop img{
     width: 35%;
- }
- .card-descr{
+}
+.card-descr{
     font-size: 14px;
     padding-top: 5px;
- }
- .card-descr p {
+}
+.card-descr p {
     font-size: 13px;
     margin: -1px;
     padding-right: -5px;
 }
- .card-star{
+.card-star{
     margin: 0;
     padding-top: 40px;
     font-size: 12px;
 }
+
 /************/
 
 
  /***ACTIVITE***/
- .activity{
+.activity{
     display: block;
 }
 .activity h3 {
     margin: 50px 0 25px 50px;
     font-size: 22px;
 }
- .titleActivity{
+.titleActivity{
     font-size: 22px;
     margin-bottom: 0px;
 }
- .activityMarseille{
+.activityMarseille{
     display: flex;
     width: 100%;
 }
- .card-activity{
+.card-activity{
     margin: 20px;
     margin-bottom: 30px;
 }
@@ -538,7 +553,7 @@ header{
 /************/
     
  /***FOOTER***/
- footer {
+footer {
     display: flex;
     margin-left: 0;
     margin-top: 20px;
@@ -547,15 +562,15 @@ header{
     width: auto;
 }
  
- .footer-left,
- .footer-middle,
- .footer-right{
+.footer-left,
+.footer-middle,
+.footer-right{
     padding: 1rem;
 }
 /************/
 
 
-/******************/
+/************/
 /***HOVER***/
 /***MENU***/
 .menu :hover{
@@ -571,7 +586,6 @@ header{
     box-shadow: none;
     color: #0065FC;
     background-color: #DEEBFF;
-
 }
 
 /**FILTRES**/
@@ -603,15 +617,11 @@ footer p:hover {
 }
 
 
-
-
-
-
   /************/
  /***Mobile***/
 /************/ 
 @media screen and (max-width:767px){
-   main {
+main {
     width: auto;
     padding: 0;
    }
@@ -812,7 +822,6 @@ button span{
     width: 95%;
     margin-top: 10px;
     margin-left: 10px;
-
 }
 /************/
 
@@ -843,8 +852,6 @@ width: 100%;
     border-top: none;
     border-bottom: 2px solid #0065FC;
 }
-
-
 
 /**SEARCHBAR**/
 .btn-search:hover {
@@ -878,5 +885,5 @@ width: 100%;
 footer p:hover {
     color: #0065FC;
 }
- /**********/
+ /************/
 }
