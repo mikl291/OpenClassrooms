@@ -456,6 +456,9 @@ button span{
     font-size: 22px;
     margin-left: 20px;
 }
+.accom-mars-title h2{
+    margin-left: 20px;
+}
 .mars-hotels{
     display: flex;
     justify-content: center;
