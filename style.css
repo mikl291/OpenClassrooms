@@ -277,7 +277,7 @@ nav a{
     flex-direction: column;
     padding: 0% 0% 0% 1%;
     font-size: 14px;
-    margin: -140px 0px 25px 102px;
+    margin: -140px 0px 25px 101px;
 }
 .card-descr p {
     margin-top: 10px;
@@ -507,11 +507,11 @@ button span{
     width: 35%;
 }
 .card-descr{
-    font-size: 14px;
+    font-size: 13px;
     padding-top: 5px;
 }
 .card-descr p {
-    font-size: 13px;
+    font-size: 12px;
     margin: -1px;
     padding-right: 5px;
 }
