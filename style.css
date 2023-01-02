@@ -9,6 +9,7 @@
 body {
     box-sizing: border-box;
     overflow-x: hidden;
+    width: 95%;
 }
 
 
@@ -195,7 +196,7 @@ nav a{
 .card-hebr {
     background-color: #ffff;
     border: 3px solid #ffff;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0px 8px black;
@@ -449,6 +450,7 @@ button span{
     display: block;
     width: 95%;
     margin-left: 20px;
+    margin-bottom: 20px;
     margin-right: 20px;
     padding: 0;
 }
@@ -466,7 +468,7 @@ button span{
     margin-left: 10px;
 }
 .card-hebr{
-    width: 29%;
+    width: 28%;
     margin-right: 25px;
 }
 .card-hebr img{
@@ -482,10 +484,8 @@ button span{
 }
  /***POPULAIRE***/
 .pop-mars{
-    display: block;
     width: 95%;
-    padding: 0;
-    margin: 20px;
+    margin: auto;
 }
 .pop-mars-title{
     font-size: 22px;
@@ -499,29 +499,31 @@ button span{
 .pop-hotels{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    margin-bottom: 20px;
-    margin-left: 10px;
 }
 .card-pop{
-    margin: 0px 20px 0 0px;
+    margin: 0px 10px 0 10px;
+    justify-content: space-between;
+    padding: 3px;
 }
 .card-pop img{
-    width: 35%;
+    width: 33%;
+    object-fit: cover;
+    width: 70px;
+    border-radius: 20px 0 0 20px;
+    /* height: 100px; */
 }
 .card-descr{
-    font-size: 13px;
-    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
 }
 .card-descr p {
-    font-size: 12px;
-    margin: -1px;
-    padding-right: 5px;
+    font-size: 11px;
 }
 .card-star{
     margin: 0;
     padding-top: 40px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 /************/
