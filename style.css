@@ -411,18 +411,18 @@ button span{
 /************/ 
  
  /***FILTRE***/
-.filters{
-    display: flex;
-    margin-top: 10px;
-    margin-left: 20px;
+.Filters{
+    display: block;
+    padding-top: 10px;
+    margin-left: 0px;
+    width: 100%;
 }
-.btn-filter{
+.btnFilter{
     width: 100%;
 }
 .btn{
-    margin-left: 5px;
-    margin-right:5px;
-    font-size: 17px;
+    margin-right: -10px;
+    font-size: 16px;
     font-weight: bold;
 }
 /************/
@@ -448,28 +448,21 @@ button span{
  /***HEBERGEMENT***/
 .accomMars{
     display: block;
-    width: 95%;
-    margin-left: 20px;
+    width: 100%;
     margin-bottom: 20px;
-    margin-right: 20px;
     padding: 0;
 }
 .accom-mars-title{
     font-size: 22px;
     margin-left: 20px;
 }
-.accom-mars-title h2{
-    margin-left: 20px;
-}
 .mars-hotels{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
 }
 .card-hebr{
     width: 28%;
-    margin-right: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .card-hebr img{
     width: 100%;
@@ -484,7 +477,7 @@ button span{
 }
  /***POPULAIRE***/
 .pop-mars{
-    width: 95%;
+    width: 100%;
     margin: auto;
 }
 .pop-mars-title{
@@ -504,18 +497,19 @@ button span{
     margin: 0px 10px 0 10px;
     justify-content: space-between;
     padding: 3px;
+    height: 115px;
 }
 .card-pop img{
     width: 33%;
     object-fit: cover;
     width: 70px;
     border-radius: 20px 0 0 20px;
-    /* height: 100px; */
 }
 .card-descr{
     display: flex;
     flex-direction: column;
     margin-left: 70px;
+    margin-top: -115px;
 }
 .card-descr p {
     font-size: 11px;
@@ -534,20 +528,16 @@ button span{
     display: block;
 }
 .activity h3 {
-    margin: 50px 0 25px 50px;
+    margin: 50px 0 25px 20px;
     font-size: 22px;
-}
-.titleActivity{
-    font-size: 22px;
-    margin-bottom: 0px;
 }
 .activityMarseille{
-    display: flex;
     width: 100%;
 }
 .card-activity{
-    margin: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .nameActivity {
     margin-bottom: 10px;
@@ -563,9 +553,8 @@ footer {
     display: flex;
     margin-left: 0;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: auto;
+    width: 100%;
+
 }
  
 .footer-left,
