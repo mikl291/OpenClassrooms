@@ -614,7 +614,7 @@ footer p:hover {
 }
 
 
-  /************/
+   /************/
  /***Mobile***/
 /************/ 
 @media screen and (max-width:767px){
@@ -791,12 +791,11 @@ footer p:hover {
     .accomMars{
         background-color: white;
         display: block;
-        margin-left: 20px;
-        width: 93%;
+        width: 100%;
     }
     .accom-mars-title{
         font-size: 22px;
-        margin-left: 0px;
+        margin-left: 20px;
         margin-bottom: 10px;
     }
     .mars-hotels{
@@ -804,7 +803,8 @@ footer p:hover {
         flex-direction: column;
     }
     .card-hebr{
-        width: 100%;
+        width: 95%;
+        margin-left: 10px;
     }
     .card-hebr img{
         width: 100%;
@@ -818,6 +818,7 @@ footer p:hover {
         width: 100%;
         border-radius: 0;
         padding: 0;
+        margin: 0;
     }
     .pop-mars-title{
         font-size: 22px;
@@ -828,8 +829,8 @@ footer p:hover {
         margin-right: 15px;
     }
     .card-pop {
-        width: 93%;
-        margin-left: 20px;
+        width: 95%;
+        margin-left: 10px;
     }
     .card-pop img{
         object-fit: cover;
@@ -864,11 +865,12 @@ footer p:hover {
     .activityMarseille{
         display: flex;
         flex-direction: column;
-        width: 94%;
-        margin-left: 10px;
+        width: 100%;
+        /* margin-left: 10px; */
     }
     .card-activity{
         margin-top: 10px;
+        width: 96%;
         margin-left: 10px;
     }
     .card-activity img {
