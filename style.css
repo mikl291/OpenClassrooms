@@ -866,7 +866,6 @@ footer p:hover {
         display: flex;
         flex-direction: column;
         width: 100%;
-        /* margin-left: 10px; */
     }
     .card-activity{
         margin-top: 10px;
